@@ -19,8 +19,8 @@ It also supports context files for handling name changes, style guidance, and tr
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/epub-translator.git
-cd epub-translator
+git clone https://github.com/krausp86/ai-book-translator.git
+cd ai-book-translator
 
 # Create virtual environment
 python3 -m venv .venv
