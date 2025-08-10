@@ -51,6 +51,7 @@ Arguments:
 --model – OpenAI model name (e.g., gpt-4o, gpt-4.1-mini).
 --api-key – Your OpenAI API key (passed directly, not from env vars).
 --context-file – Optional .txt file containing context instructions and name mappings.
+```
 
 ## 📄 Example context file:
 ```
@@ -82,13 +83,13 @@ Do not add explanations, translator's notes, or any additional commentary.
 
 ## 🔍 Logging
 The script outputs detailed logs:
-Which file is currently being processed
-Chunk sizes and poetry detection
-Any translation length mismatches and reconciliation attempts
-Preview of raw model output when problems occur
+- Which file is currently being processed
+- Chunk sizes and poetry detection
+- Any translation length mismatches and reconciliation attempts
+- Preview of raw model output when problems occur
 
 ## ⚠️ Notes
-OpenAI API usage costs depend on the book length, chosen model, and token count.
-As a rough guide, a short children’s book (~10k tokens) with gpt-4o might cost less than $0.50 to translate.
-The tool will retry failed translations up to 3 times before raising an error.
-Only the text nodes are translated; images, CSS, and formatting are preserved.
+- OpenAI API usage costs depend on the book length, chosen model, and token count.
+- As a rough guide, a short children’s book (~10k tokens) with gpt-4o might cost less than $0.50 to translate.
+- The tool will retry failed translations up to 3 times before raising an error.
+- Only the text nodes are translated; images, CSS, and formatting are preserved.
